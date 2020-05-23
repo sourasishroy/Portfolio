@@ -4,10 +4,37 @@
         <title>My Portfolio</title>
         <link rel="stylesheet" type="text/css" href="portfolio.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
     
     <body>
-       <div class="contain">
+    <nav class="navbar navbar-expand bg fixed-top">
+    <div class="container">
+  <a class="navbar-brand" href="#">SOURASISH</a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">My Bio <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Skills</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Project</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+    
+     <div id="fullpage">
+     
+      <div class="section contain">
+      
+       
         <div class="main">
         <h1>Hello!</h1>
         <h1>I'm Sourasish Roy</h1>
@@ -23,10 +50,51 @@
 			</div>
 			Web Developer
 		</h1>
-		<p>DON'T FORGET TO SUBSCRIBE</p>
+		
 	</div>
-    </div>  
+    </div>
+    
+    
+    <div class="section">
+    <div class="second">
+        <div class="row">
+            <div class="col-6">
+                <h1>My Bio</h1>
+                <br>
+                <p>Hello, Welcome to my website.I am an electronic hobbyist, digital content creator. In the past few years, I have worked on many independent projects alongside my formal education as Electronic and Communication Engineer. My goal is to develop innovative solutions in the electronic/solar and automation industries through my combined software and hardware experience. I have advanced knowledge in Java and C, experience designing custom electronic circuits/robotics, as well as building this website using responsive web technologies from scratch. Additionally, I am a photographer and cyclist. I created this site to share my interests, as they evolve, and connect with like-minded individuals.</p>
+                
+            </div>
+             
+            <div class="col-6">
+                
+            </div>
+        </div>
+    </div> 
+ </div>
+    
+    <div class="section">
+       <div class="third">
+        <div class="row">
+            <div class="col-6">
+                <h1>2</h1>
+            </div>
+        </div>
+       </div>
+    </div>
+  </div>                        
        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js" integrity="sha256-SNaaqfQPa0XlEqQDrsurQ+Qq5XnhNrwHQXnZpdXlCEI=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function() {
+	$('#fullpage').fullpage({
+		//options here
+		autoScrolling:true,
+        fadingEffect: false
+	});
+
+});
+        </script>
         <script type="text/javascript" src="portfolio.js"></script>
+        
     </body>
 </html>
